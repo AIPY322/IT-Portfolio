@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ServiceNow KB Autosave</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>ServiceNow KB Autosave</h1>
+    <p>Write HTML, preview it, and autosave directly to local files.</p>
+  </div>
+  <div id="saveStatus" class="status">Ready</div>
+</header>
+
+<main>
+  <aside>
+    <button id="newBtn">+ New Article</button>
+    <h2>Articles</h2>
+    <div id="articleList"></div>
+  </aside>
+
+  <section class="workspace">
+    <div class="topbar">
+      <input id="title" value="Untitled Article" aria-label="Article title">
+      <span id="fileName"></span>
+    </div>
+
+    <div class="panes">
+      <div class="pane">
+        <label>HTML Editor</label>
+        <textarea id="editor" spellcheck="false"></textarea>
+      </div>
+      <div class="pane preview-pane">
+        <label>Preview</label>
+        <iframe id="preview"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
